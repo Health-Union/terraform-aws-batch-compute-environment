@@ -10,11 +10,7 @@ variable "service_role" {
   description = "The full Amazon Resource Name(ARN) of the IAM role that allows AES Batch to make calls to other AWS services on you behalf"
 }
 
-variable "desired_vcpus" {
-  type        = string
-  description = "The desired number of EC2 vCPUS in the compute environment"
-  default     = ""
-}
+
 
 variable "instance_role" {
   type        = string
@@ -34,6 +30,12 @@ variable "max_vcpus" {
 variable "min_vcpus" {
   type        = string
   description = "The minimum number of EC2 vCPUs that environment should maintain"
+}
+
+variable "desired_vcpus" {
+  type        = string
+  description = "The desired number of EC2 vCPUS in the compute environment"
+  default     = ""
 }
 
 variable "security_group_ids" {
