@@ -22,7 +22,7 @@ variable "instance_role" {
 }
 
 variable "instance_type" {
-  type        = "list"
+  type        = list
   description = "A list of instance that may be launched"
 }
 
@@ -37,12 +37,12 @@ variable "min_vcpus" {
 }
 
 variable "security_group_ids" {
-  type        = "list"
+  type        = list
   description = "A list of EC2 security group that are associated with instances launched in the compuite environments"
 }
 
 variable "subnets" {
-  type        = "list"
+  type        = list
   description = "A list of VPC subnet into which the compute resource are launced"
 }
 
